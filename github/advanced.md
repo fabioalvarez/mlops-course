@@ -20,6 +20,9 @@ c1 <--- c2 <--- c3 <--- c4
 git rebase -i HEAD~3
 ```
 
+Once you have selected the commits you want to edit, you will be presented with a list of commits in your text editor.
+Each commit will be listed with a command next to it, such as "pick" or "edit". You can change the command for each commit
+to perform different actions.
 
 - git revert
 - git reset
