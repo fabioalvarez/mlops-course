@@ -95,5 +95,11 @@ The first time you push a branch to a remote, you should use the -u flag. For su
   git pull
 ```
 
+## Git Cheat Sheet
+
+[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 
+## Git Videos
+- [Git Advanced](https://www.youtube.com/watch?v=qsTthZi23VE&ab_channel=freeCodeCamp.org)
+- [Git for proffesionals](https://www.youtube.com/watch?v=Uszj_k0DGsg&t=2405s&ab_channel=freeCodeCamp.org)
