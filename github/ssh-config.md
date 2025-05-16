@@ -44,7 +44,9 @@ eval "$(ssh-agent -s)"
 
 # Add your SSH private key to the agent
 # If you used a different filename, replace id_ed25519
-ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519_rappi
+
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519_rappi
 ```
 
 If you set a passphrase in Step 2, you will be prompted to enter it here.
@@ -343,3 +345,23 @@ SSH connects but authenticates you as the wrong user.
   ```bash
   ssh-add -l
   ```
+
+## Errors
+
+```
+  (base) ~/Documents/pns-global-search-api git:[feature/update-pns-module-http]
+  git push origin feature/update-pns-module-http
+  git@bitbucket.org: Permission denied (publickey).
+  fatal: Could not read from remote repository.
+  
+  Please make sure you have the correct access rights
+  and the repository exists.
+```
+
+Solution
+
+```
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_ed25519_rappi
+
+```

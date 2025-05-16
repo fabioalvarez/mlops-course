@@ -24,9 +24,32 @@ Once you have selected the commits you want to edit, you will be presented with 
 Each commit will be listed with a command next to it, such as "pick" or "edit". You can change the command for each commit
 to perform different actions.
 
+## Cherry Picking
+Allows you to integrate specific commits from one branch into another branch.
+This is useful when you want to apply a specific change from one branch to another without merging the entire branch.
+Another situation is when you merge a commit in the wrong branch and you want to move it to the right one.
+
+For example, if you have a commit in the "main" branch that you want to apply to the "feature" branch, you can cherry-pick that commit.
+1. Identify the commit you want to cherry-pick
+2. Switch to the target branch, in this case is feature
+3. Cherry-pick the commit: `git cherry-pick <commit-hash>`
+
+But the commit is still in the main branch:
+1. Switch to the main branch
+2. git reset --hard HEAD~1
+
+
+Next steps:
+1. When to use git reset?
+2. Tutorial min: 12:04 (Advanced)
+
+=======================================================================
+
 - git revert
 - git reset
 - git rebase
+
+
 
 
 Tools
